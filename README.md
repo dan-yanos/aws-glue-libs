@@ -31,3 +31,14 @@ pytest: ./bin/gluepytest
 ## Licensing
 
 The libraries in this repository licensed under the [Amazon Software License](http://aws.amazon.com/asl/) (the "License"). They may not be used except in compliance with the License, a copy of which is included here in the LICENSE file.
+
+## Packaging
+
+This project has been updated with the `setup.cfg` and `pyproject.toml` files needed to create a 
+Python 'wheel' in accordance with PEP 517 and PEP 518. To build the 'wheel' artifact run the 
+following commands.
+
+```
+pip3 install build
+python3 -m build
+```
